@@ -10,7 +10,7 @@ int main(){
     for(int i=100;i<=range;i++){
         int count=0,sum=0;
         int num =i,n1=i,n=i;
-        
+                
         // digit count
         while(n>0){
             count++;
