@@ -1,3 +1,4 @@
+// Write a program to Move zeroes to end. 
 #include<stdio.h>
 
 void array_input(int arr[],int n){
@@ -40,6 +41,7 @@ int main(){
     int arr[n];
     array_input(arr,n);
     array_display(arr,n);
+
     printf("\nZeoes at End : ");
     moveZeroes(arr,n);
     return 0;
