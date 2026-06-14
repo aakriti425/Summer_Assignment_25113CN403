@@ -27,15 +27,17 @@ void array_display(int r, int c, int arr[r][c])
     }
 }
 
-void matrix_transpose(int r1, int c1, int a[r1][c1])
+void diagonal_sum(int r, int c, int a[r][c])
 {
     int dsum = 0;
-    for (int i = 0; i < r1; i++)
+    for (int i = 0; i < r; i++)
     {
-        for (int j = 0; j < c1; j++)
+        for (int j = 0; j < c; j++)
         {
-            if (i == j || i + j == r1 - 1)
+            if (i == j || i + j == r - 1)
             {
+                if (i == j && i + j == r - 1)
+                    continue; 
                 dsum += a[i][j];
             }
         }
@@ -45,14 +47,14 @@ void matrix_transpose(int r1, int c1, int a[r1][c1])
 
 int main()
 {
-    int r1, c1;
+    int r, c;
     printf("Enter no of Rows and column of Matrix : ");
-    scanf("%d %d", &r1, &c1);
-    int arr[r1][c1];
+    scanf("%d %d", &r, &c);
+    int arr[r][c];
 
-    array_input(r1, c1, arr);
-    array_display(r1, c1, arr);
+    array_input(r, c, arr);
+    array_display(r, c, arr);
 
-    matrix_transpose(r1, c1, arr);
+    diagonal_sum(r, c, arr);
     return 0;
 }
