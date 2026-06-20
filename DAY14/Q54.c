@@ -11,7 +11,7 @@ void array_input(int arr[],int n){
 
 void array_display(int arr[],int n){
     for(int i= 0;i <n ;i++){
-        printf ("%d\t",arr[i]);
+        printf ("%d\t",arr[i]); 
     }
 }
 void Frequency_Ele(int arr[],int n , int ele ){
