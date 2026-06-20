@@ -22,7 +22,7 @@ void Duplicate(int arr[],int n ){
             if(arr[i] == arr[j]){
                 printf("%d\t",arr[i]);
                 loc=1;
-                
+            
             }
         }
     }
