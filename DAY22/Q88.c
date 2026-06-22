@@ -16,7 +16,7 @@ int main()
     int len = strlen(str);
 
     // Traverse the string character by character
-    for (int i = 0; i < len; i++)
+    for (int i = 0 ; i < len; i++)
     {
         // Check if the current character is a space
         if (str[i] == ' ')
